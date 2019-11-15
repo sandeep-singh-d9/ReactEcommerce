@@ -7,8 +7,10 @@ import './App.css';
 import Navbar from './components/Navbar'
 import ProductList from './components/ProductList'
 import Detail from './components/Detail'
-import Cart from './components/Cart'
+import Cart from './components/Cart/Cart'
 import Default from './components/Default'
+import Modal from './components/Modal'
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/cart" component={Cart}></Route>
         <Route component={Default}></Route>
       </Switch>
+      <Modal/>
     </React.Fragment>
   );
 }
